@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+ 
+{% block title %}Bienvenido a la Aplicación{% endblock %}
+ 
+{% block content %}
+<div class="row">
+    <div class="col-md-6 offset-md-3 text-center">
+        <h1 class="mt-5">Bienvenido a la Aplicación de Gestión</h1>
+        <p class="lead">Seleccione una de las siguientes opciones:</p>
+        <div class="mt-4">
+            <a href="{{ url_for('lugar.index') }}" class="btn btn-lg btn-primary mb-3">Gestionar Lugares</a>
+            <br>
+            <a href="{{ url_for('persona.index') }}" class="btn btn-lg btn-success">Gestionar Personas</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
